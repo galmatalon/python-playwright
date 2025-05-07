@@ -1,6 +1,7 @@
 playwright
 pytest
 pytest-playwright
+allure-pytest
 
 
 
