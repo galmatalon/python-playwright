@@ -31,11 +31,12 @@ jobs:
           pip install -r requirements.txt
 
       # 4 Run pytest under xvfb, save Allure results
+  # xvfb-run pytest -m devRun --alluredir=allure-results
       - name: Test with pytest
         shell: bash
         run: |
           source .venv/bin/activate
-          xvfb-run pytest -m devRun --alluredir=allure-results
+          xvfb-run pytest --alluredir=allure-results
 
       # 5 Write build/git metadata into Allure
       - name: Add metadata to Allure
