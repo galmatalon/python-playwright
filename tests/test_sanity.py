@@ -12,7 +12,6 @@ class Test1(BaseTest):
 
     def test_01_wizards(self):
         self.wizard1_page.fill_page("Gal","Matalon","gal@gmail.com")
-        self.wizard1_page.option_about()
 
     def test_02_wizards(self):
         self.wizard2_page.choose_option("beginner")
