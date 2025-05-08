@@ -3,6 +3,9 @@ name: automation demo
 on:
   workflow_dispatch:          # manual trigger only
 
+permissions:
+  contents: write  # מאפשר push ל-gh-pages
+
 jobs:
   merge_test:
     name: Run pytest & publish Allure
