@@ -1,7 +1,7 @@
 
 # Python Playwright Automation
 
-![Python Playwright](https://path-to-your-image.com/your-image.jpg)  <!-- Link to the top image -->
+![Python Playwright](https://automation.co.il/wp-content/uploads/2025/04/%D7%94%D7%9E%D7%9B%D7%9C%D7%9C%D7%94-%D7%9C%D7%90%D7%95%D7%98%D7%95%D7%9E%D7%A6%D7%99%D7%94-%D7%9C%D7%95%D7%92%D7%95.jpeg)  <!-- Link to the top image -->
 
 ## 🚀 Description
 A Python automation project using Playwright for running automated tests on websites. The project includes scripts for automating browser actions with Playwright and generating Allure reports for test result analysis.
