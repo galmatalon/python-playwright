@@ -1,10 +1,12 @@
 
 # Python Playwright Automation
 
-## Description
+![Python Playwright](https://path-to-your-image.com/your-image.jpg)  <!-- Link to the top image -->
+
+## 🚀 Description
 A Python automation project using Playwright for running automated tests on websites. The project includes scripts for automating browser actions with Playwright and generating Allure reports for test result analysis.
 
-## Installation
+## 🛠️ Installation
 
 ### System Requirements:
 - Python 3.7 or higher
@@ -34,7 +36,7 @@ After running, you can view the Allure report:
 allure serve allure-results
 ```
 
-## Usage
+## 🏃 Usage
 
 To run the tests, simply execute the code as described in the installation section.
 
@@ -43,7 +45,7 @@ For example, to run all tests on the Chrome browser:
 pytest --browser=chrome
 ```
 
-## Allure Reports
+## 📊 Allure Reports
 
 To generate Allure reports, use the following command after running the tests:
 ```bash
@@ -55,7 +57,7 @@ Then, to view the report:
 allure serve allure-results
 ```
 
-## File Structure
+## 📂 File Structure
 
 The project contains the following files and directories:
 
@@ -70,7 +72,7 @@ python-playwright/
 └── README.md                 # This file
 ```
 
-## Contribution
+## 🤝 Contribution
 
 If you would like to contribute to the project, all contributions are welcome! You can add new features, fix bugs, or improve the documentation.
 
@@ -79,13 +81,13 @@ If you would like to contribute to the project, all contributions are welcome! Y
 2. Ensure your code passes the tests by running them.
 3. We will review your contribution and get back to you.
 
-## Dependencies
+## 📦 Dependencies
 
 The project depends on the following libraries:
 - `pytest` - for running automated tests.
 - `playwright` - for browser automation.
 - `allure-pytest` - for generating Allure reports.
 
-## Links
+## 🔗 Links
 - [Playwright Documentation](https://playwright.dev/)
 - [Allure Documentation](https://allure.qatools.ru/)
