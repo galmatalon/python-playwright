@@ -1,21 +1,26 @@
-# 🔥 Python Playwright Automation Project
 
-Welcome to the **Python Playwright Automation Framework** – a robust, scalable and beginner-friendly end-to-end testing setup using Playwright with Python.
+![Project Banner](https://github.com/galmatalon/python-playwright/assets/project-banner.png)
 
-This project is designed to automate web application testing with modern tools, clear structure, and continuous integration support.
+# Python Playwright Automation Framework
 
----
+![Build Status](https://github.com/galmatalon/python-playwright/actions/workflows/tests.yml/badge.svg)
+![Allure Report](https://img.shields.io/badge/Allure-Report-blueviolet)
+![Python Version](https://img.shields.io/badge/python-3.11-blue)
+![License](https://img.shields.io/github/license/galmatalon/python-playwright)
+
+## 🚀 Overview
+
+This project is a robust, scalable, and beginner-friendly end-to-end testing framework using [Playwright](https://playwright.dev/python/) with Python.
+It is designed to automate web application testing with modern tools, clear structure, and continuous integration support.
 
 ## 🎯 Project Goals
 
 - Provide a clean and modular automation framework using Python + Playwright
 - Enable fast and reliable cross-browser testing
-- Demonstrate good practices in test structure, reporting, and CI/CD integration
-- Be beginner-friendly for QA engineers looking to transition into automation
+- Demonstrate best practices in test structure, reporting, and CI/CD integration
+- Be beginner-friendly for QA engineers transitioning into automation
 
----
-
-## 🧰 Technologies Used
+## 🛠️ Technologies Used
 
 - [Python 3.11](https://www.python.org/)
 - [Playwright](https://playwright.dev/python/)
@@ -24,107 +29,105 @@ This project is designed to automate web application testing with modern tools, 
 - [GitHub Actions](https://github.com/features/actions)
 - [HTML Test Report](https://pypi.org/project/pytest-html/)
 
----
+## 🧰 Installation & Usage
 
-## 🚀 Installation & Running the Tests
+1. **Clone the repository:**
 
-1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/galmatalon/python-playwright.git
+   cd python-playwright
+   ```
 
-```bash
-git clone https://github.com/galmatalon/python-playwright.git
-cd python-playwright
-```
+2. **Create and activate a virtual environment:**
 
-2. **Install dependencies** (preferably in a virtual environment):
+   ```bash
+   python -m venv venv
+   source venv/bin/activate  # On Windows: venv\Scripts\activate
+   ```
 
-```bash
-pip install -r requirements.txt
-```
+3. **Install dependencies:**
 
-3. **Run Playwright install**:
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-```bash
-playwright install
-```
+4. **Install Playwright browsers:**
 
-4. **Run tests**:
+   ```bash
+   playwright install
+   ```
 
-```bash
-pytest --html=reports/report.html
-```
+5. **Run tests:**
 
-5. **Run tests with Allure**:
+   ```bash
+   pytest --alluredir=allure-results
+   ```
 
-```bash
-pytest --alluredir=allure-results
-allure serve allure-results
-```
+6. **Generate Allure report:**
 
----
+   ```bash
+   allure serve allure-results
+   ```
 
 ## 📁 Project Structure
 
+```plaintext
+.
+├── .github/workflows/    # CI/CD workflows
+├── data/                 # Test data files
+├── pages/                # Page Object Models
+├── tests/                # Test cases
+├── utils/                # Utility functions
+├── config.ini            # Configuration file
+├── pytest.ini            # Pytest configuration
+├── requirements.txt      # Python dependencies
+└── README.md             # Project documentation
 ```
-python-playwright/
-│
-├── tests/               # Test cases organized by feature
-├── pages/               # Page Object Model classes
-├── utils/               # Utility functions and helpers
-├── reports/             # HTML reports output folder
-├── conftest.py          # Fixtures and test setup
-├── requirements.txt     # Python dependencies
-└── .github/workflows/   # CI configuration
-```
+
+## ✅ Test Coverage
+
+- Cross-browser testing (Chromium, Firefox, WebKit)
+- Functional UI tests
+- Form validations
+- Navigation flows
+- Error handling scenarios
+
+## 📊 Reports
+
+- **Allure Report:** [View Report](https://galmatalon.github.io/python-playwright/allure-report/index.html)
+- **GitHub Actions Workflow:** [View Workflow](https://github.com/galmatalon/python-playwright/actions/workflows/tests.yml)
+
+![Allure Report Screenshot](https://github.com/galmatalon/python-playwright/assets/allure-report-screenshot.png)
+
+## 🏷️ Badges
+
+- ![Build Status](https://github.com/galmatalon/python-playwright/actions/workflows/tests.yml/badge.svg)
+- ![Allure Report](https://img.shields.io/badge/Allure-Report-blueviolet)
+- ![Python Version](https://img.shields.io/badge/python-3.11-blue)
+- ![License](https://img.shields.io/github/license/galmatalon/python-playwright)
+
+## 📸 Screenshots
+
+![Test Execution](https://github.com/galmatalon/python-playwright/assets/test-execution.png)
+![Allure Dashboard](https://github.com/galmatalon/python-playwright/assets/allure-dashboard.png)
+
+## 🙌 Contributing
+
+Contributions are welcome! Please open an issue or submit a pull request for any improvements or suggestions.
+
+## 📣 Call to Action
+
+If you find this project helpful:
+
+- ⭐ Star this repository
+- 🐛 Report issues
+- 📢 Share with others
+
+## 🔗 Connect with Me
+
+- [LinkedIn - Gal Matalon](https://www.linkedin.com/in/gal-matalon/)
+- [Automation College](https://automation.co.il/)
 
 ---
 
-## ✅ What’s Tested
-
-- User login & logout flows
-- UI validations and error handling
-- Browser compatibility
-- Form interactions and assertions
-
----
-
-## 📊 GitHub Actions Reports
-
-👉 [Click here to view test workflow runs](https://github.com/galmatalon/python-playwright/actions)
-
-If you've configured `pytest-html` or `Allure`, reports are automatically generated and can be added to GitHub Pages or sent via email in CI.
-
----
-
-## 📛 Badges
-
-![Build Status](https://github.com/galmatalon/python-playwright/actions/workflows/python-app.yml/badge.svg)
-![Python Version](https://img.shields.io/badge/python-3.11-blue)
-![License](https://img.shields.io/github/license/galmatalon/python-playwright)
-
----
-
-## 🖼️ Screenshots
-
-<img src="https://github.com/galmatalon/python-playwright/blob/main/assets/screenshot-report.png" width="700"/>
-
-> Add your report screenshots or test case illustrations here.
-
----
-
-## 🙌 Contribute / Feedback
-
-If you find this project useful:
-
-⭐ **Star the repository** to support the work!  
-💬 **Send feedback** or suggestions in the issues section.  
-📩 Reach out to [Gal Matalon](https://www.linkedin.com/in/galmatalon) for collaborations or questions.
-
----
-
-## 📘 License
-
-This project is licensed under the MIT License.
-
----
-
-**Automation College | by Gal Matalon**
+*This project is maintained by Gal Matalon and is part of the Automation College initiative.*
